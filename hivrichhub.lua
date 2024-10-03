@@ -1,0 +1,143 @@
+
+-- local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/CrismonPetrasion/HWID/main/Checker.lua"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+ 
+--// Services
+ 
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+ 
+--// Variables
+ 
+local Camera = workspace.CurrentCamera
+local LocalPlayer = Players.LocalPlayer
+ 
+local CurrentCamera = Camera
+local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
+
+--// Library
+ 
+local Library = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ 
+--// Window
+ 
+local Window = Library:CreateWindow({
+    Name = "ｓｖｏｈｉｖｒｉｃｈ ｈｕｂ",
+    LoadingTitle = "By vladhivirc666 and SVOZOVNER",
+    LoadingSubtitle = "Help me I'm being held hostage",
+    Discord = {
+        Enabled = true,
+        Invite = "discord.gg/Tyq3YnM2yP", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+        Title = "get key in discord server",
+        Subtitle = "and use for fan:>",
+        Note = "discord.gg/Tyq3YnM2yP",
+        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+        SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+        Key = {"bthb"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+})
+ 
+local Home = Window:CreateTab("Info", 4483362458) -- Title, Image
+local Misc = Window:CreateTab("Main", 4483362458) -- Title, Image
+local Mati = Window:CreateTab("Other Functions", 4483362458) -- Title, Image
+ 
+--// Version
+ 
+local Version = "1.1"
+ 
+--// Game
+ 
+if true then
+    do
+        --// Info
+        Home:CreateLabel("Hub by vladhivrich and svozovner")
+        Home:CreateLabel("Version: ".. Version)
+    end
+
+    do
+        --// Main
+        Misc:CreateSection("                                                          －－ＳＣＲＩＰＴＳ－－")
+
+        Misc:CreateSection("Universal")
+        Misc:CreateButton({
+            Name = "Hivrich Yield v6",
+            Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/hivrich%20yield'))()
+            end,
+        })
+
+        Misc:CreateButton({
+            Name = "Teleport hack by VladHivrich666",
+            Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/teleport%20to%20cords'))()
+            end,
+        })
+
+        Misc:CreateSection("BloxStrike")
+         Misc:CreateButton({
+            Name = "VladHivrich666 cheat free (work only in bloxstrike)",
+            Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/hivrihack%20bloxstrike%20hvh'))()
+            end,
+        })
+
+        Misc:CreateSection("Doors")
+        Misc:CreateButton({
+            Name = "Doors Vanta Hub",
+            Callback = function()
+                loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d9744f681f6e50ab3fc5d9eb45c7cc7.lua"))()
+            end,
+        })
+                Misc:CreateButton({
+            Name = "Doors op hub",
+            Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+            end,
+        })
+                Misc:CreateButton({
+            Name = "Doors BlackKing Hub",
+            Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+            end,
+        })
+    end
+        
+    do
+        Mati:CreateSection("Clip Hack")
+        Mati:CreateButton({
+            Name = "-Clip",
+            Callback = function()
+                local player = game.Players.LocalPlayer
+                local character = player.Character
+                if character then
+                    local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+                        if humanoidRootPart then
+                            humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.CFrame.X, humanoidRootPart.CFrame.Y -25, humanoidRootPart.CFrame.Z)
+                        end
+                    end
+                end,
+        })
+
+        Mati:CreateButton({
+            Name = "+Clip",
+            Callback = function()
+                local player = game.Players.LocalPlayer
+                local character = player.Character
+                if character then
+                    local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+                        if humanoidRootPart then
+                            humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.CFrame.X, humanoidRootPart.CFrame.Y +25, humanoidRootPart.CFrame.Z)
+                        end
+                    end
+                end,
+        })
+    end
+end
