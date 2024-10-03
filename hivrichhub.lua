@@ -26,7 +26,7 @@ local Library = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
  
 local Window = Library:CreateWindow({
     Name = "ｓｖｏｈｉｖｒｉｃｈ ｈｕｂ",
-    LoadingTitle = "By vladhivirc666 and SVOZOVNER",
+    LoadingTitle = "By vladhivirc666",
     LoadingSubtitle = "Help me I'm being held hostage",
     Discord = {
         Enabled = true,
@@ -77,15 +77,15 @@ if true then
         Misc:CreateButton({
             Name = "Teleport hack by VladHivrich666",
             Callback = function()
-                loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/teleport%20to%20cords'))()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/Daniagg/Teleporthack/refs/heads/main/Tphack.lua'))()
             end,
         })
 
         Misc:CreateSection("BloxStrike")
          Misc:CreateButton({
-            Name = "VladHivrich666 cheat free (work only in bloxstrike)",
+            Name = "VladHivrich666 bshub",
             Callback = function()
-                loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/hivrihack%20bloxstrike%20hvh'))()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/Daniagg/bshub/refs/heads/main/bshub.lua'))()
             end,
         })
 
