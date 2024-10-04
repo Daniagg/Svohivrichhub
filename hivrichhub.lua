@@ -64,6 +64,7 @@ if true then
 
     do
         --// Main
+        
         Misc:CreateSection("                                                          －－ＳＣＲＩＰＴＳ－－")
 
         Misc:CreateSection("Universal")
@@ -71,6 +72,20 @@ if true then
             Name = "Hivrich Yield v6",
             Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/dedosdub/hivrichhack/refs/heads/main/hivrich%20yield'))()
+            end,
+        })
+
+        Misc:CreateButton({
+            Name = "Legacy Hub",
+            Callback = function()
+                loadstring(game:GetObjects("rbxassetid://1683559539")[1].Source)()
+            end,
+        })
+        
+        Misc:CreateButton({
+            Name = "Animations R15",
+            Callback = function()
+                loadstring(game:HttpGet("https://pastebin.com/raw/uUR6pFVv", true))()
             end,
         })
 
