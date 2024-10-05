@@ -90,6 +90,13 @@ if true then
         })
 
         Misc:CreateButton({
+            Name = "Free Animations",
+            Callback = function()
+                loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script9")
+            end,
+        })
+
+        Misc:CreateButton({
             Name = "Teleport hack by VladHivrich666",
             Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/Daniagg/Teleporthack/refs/heads/main/Tphack.lua'))()
